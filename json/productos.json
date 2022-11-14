@@ -1,0 +1,15 @@
+[
+	{"id":1, "marca":"Nike", "nombre":"Court Vision Lo Be","precio":22999,"cantidad":1},
+    {"id":2, "marca":"Nike", "nombre":"Legend Essential 2","precio":23999,"cantidad":1},
+    {"id":3, "marca":"Nike", "nombre":"Air Max Sc","precio":36999,"cantidad":1},
+    {"id":4, "marca":"Adidas", "nombre":"Coreracer","precio":15999,"cantidad":1},
+    {"id":5, "marca":"Adidas", "nombre":"Durame 10","precio":21999,"cantidad":1},
+    {"id":6, "marca":"Adidas", "nombre":"Gamecourt 2","precio":19999,"cantidad":1},
+    {"id":7, "marca":"Rebook", "nombre":"Energylux 3.0","precio":20399,"cantidad":1},
+    {"id":8, "marca":"Rebook", "nombre":"Reago Essential","precio":17999,"cantidad":1},
+    {"id":9, "marca":"Rebook", "nombre":"Lite 3.0","precio":17999,"cantidad":1},
+    {"id":10, "marca":"Fila", "nombre":"Reacer Advantage","precio":17399,"cantidad":1},
+    {"id":11, "marca":"Fila", "nombre":"Novaro","precio":17399,"cantidad":1},
+    {"id":12, "marca":"Fila", "nombre":"Atmosphere","precio":14699,"cantidad":1}
+	
+]
