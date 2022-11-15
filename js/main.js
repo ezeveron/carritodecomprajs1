@@ -15,20 +15,20 @@ fetch(listadoProductos)
 	.finally(() =>
 		Productos.forEach((p) => {
 			const divProducto = document.createElement('div');
-			divProducto.classList.add('card', "col-xl-4", "col-md-6", "col-xs-12");
+			divProducto.classList.add("col-xl-4", "col-md-6", "col-xs-12","tarjeta");
 			divProducto.innerHTML = `
-														<div>
-															<br>
-																<img src="" class="imageCard card-img-top" width="50%" height="50%">
-																	<div class="card-body">
-																		<h5 class="card-title">Nombre: ${p.nombre}</h5>
-																		<h6 class="card-subtitle mb-2 text-muted">Marca: ${p.marca}</h6>
-																		<p class="card-text">Precio: $${p.precio}</p>
-																		<button id="boton${p.id}" class="btn" style="background-color: #f48c06"> Agregar al Carrito </button>
-																	</div>
-															<br>
+														<div class="card" style="width: 20rem;" id="resultado">
+														<img src="..." class="card-img-top" alt="...">
+															<div class="card-body">
+																<h5 class="card-title">Nombre: ${p.nombre}</h5>
+																<h6 class="card-subtitle mb-2 text-muted">Marca: ${p.marca}</h6>
+																<p class="card-text">Precio: $${p.precio}</p>
+																<button id="boton${p.id}" class="btn" style="background-color: #f48c06"> Agregar al Carrito </button>
+															</div>		
+															
 														</div>
-													`;
+													`
+								;
 			contenedorProductos.appendChild(divProducto);
 			const boton = document.getElementById(`boton${p.id}`);
 			boton.addEventListener('click', () => {
@@ -120,22 +120,20 @@ function actualizarCarro() {
 	localStorage.setItem('carrito', JSON.stringify(cart));
 	let aux = '';
 	cart.forEach((p) => {
-		aux += `
-            <div>
-              <br>
-                <div class="card">
-                  <img src="" class="imageCard card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Nombre: ${p.nombre}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Marca: ${p.marca}</h6>
-                    <p class="card-text">Precio: $${p.precio}</p>
-                    <p class="card-text">Cantidad: ${p.cantidad}</p>
-                    <button onClick = "eliminarDelCarro(${p.id})" class="btn" style="background-color: #f48c06" id="botonEliminar"> Eliminar del Carrito </button>
-                  </div>
-                </div>
-              <br>
-            </div>
-          `;
+		aux += 
+			`<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">${p.cantidad}</th>
+						<th scope="col">${p.marca}</th>
+						<th scope="col">${p.nombre}</th>
+						<th scope="col">$${p.precio}</th>
+						<th scope="col"><button onClick = "eliminarDelCarro(${p.id})" class="btn" style="background-color: #f48c06" id="botonEliminar"> Eliminar del Carrito </button></th>
+					</tr>
+				</thead>
+			 </table>`
+			
+		 ;
 	});
 
 	contenedorCarro.innerHTML = aux;
