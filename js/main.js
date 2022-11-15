@@ -18,10 +18,10 @@ fetch(listadoProductos)
 			divProducto.classList.add("col-xl-4", "col-md-6", "col-xs-12","tarjeta");
 			divProducto.innerHTML = `
 														<div class="card" style="width: 20rem;" id="resultado">
-														<img src="..." class="card-img-top" alt="...">
+														<img src="${p.img}" class="card-img-top" alt="zapas">
 															<div class="card-body">
-																<h5 class="card-title">Nombre: ${p.nombre}</h5>
-																<h6 class="card-subtitle mb-2 text-muted">Marca: ${p.marca}</h6>
+																<h5 class="card-title">Nombre: ${p.marca}</h5>
+																<h6 class="card-subtitle mb-2 text-muted">Marca: ${p.nombre}</h6>
 																<p class="card-text">Precio: $${p.precio}</p>
 																<button id="boton${p.id}" class="btn" style="background-color: #f48c06"> Agregar al Carrito </button>
 															</div>		

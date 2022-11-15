@@ -1,15 +1,15 @@
 [
-	{"id":1, "marca":"Nike", "nombre":"Court Vision Lo Be","precio":22999,"cantidad":1},
-    {"id":2, "marca":"Nike", "nombre":"Legend Essential 2","precio":23999,"cantidad":1},
-    {"id":3, "marca":"Nike", "nombre":"Air Max Sc","precio":36999,"cantidad":1},
-    {"id":4, "marca":"Adidas", "nombre":"Coreracer","precio":15999,"cantidad":1},
-    {"id":5, "marca":"Adidas", "nombre":"Durame 10","precio":21999,"cantidad":1},
-    {"id":6, "marca":"Adidas", "nombre":"Gamecourt 2","precio":19999,"cantidad":1},
-    {"id":7, "marca":"Rebook", "nombre":"Energylux 3.0","precio":20399,"cantidad":1},
-    {"id":8, "marca":"Rebook", "nombre":"Reago Essential","precio":17999,"cantidad":1},
-    {"id":9, "marca":"Rebook", "nombre":"Lite 3.0","precio":17999,"cantidad":1},
-    {"id":10, "marca":"Fila", "nombre":"Reacer Advantage","precio":17399,"cantidad":1},
-    {"id":11, "marca":"Fila", "nombre":"Novaro","precio":17399,"cantidad":1},
-    {"id":12, "marca":"Fila", "nombre":"Atmosphere","precio":14699,"cantidad":1}
+	{"id":1, "marca":"Nike", "nombre":"Court Vision Lo Be","precio":22999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw38eebd4d/products/NI_DH2987-001/NI_DH2987-001-1.JPG"},
+    {"id":2, "marca":"Nike", "nombre":"Legend Essential 2","precio":23999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwfd9cb2d4/products/NI_CQ9545-045/NI_CQ9545-045-1.JPG"},
+    {"id":3, "marca":"Nike", "nombre":"Air Max Sc","precio":36999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw79123229/products/NI_CW4555-002/NI_CW4555-002-1.JPG"},
+    {"id":4, "marca":"Adidas", "nombre":"Coreracer","precio":15999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwdcefc79e/products/AD_FX3594/AD_FX3594-1.JPG"},
+    {"id":5, "marca":"Adidas", "nombre":"Durame 10","precio":21999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw3cc74d47/products/AD_GW8336/AD_GW8336-1.JPG"},
+    {"id":6, "marca":"Adidas", "nombre":"Gamecourt 2","precio":19999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw104b4e68/products/AD_GW4971/AD_GW4971-1.JPG"},
+    {"id":7, "marca":"Rebook", "nombre":"Energylux 3.0","precio":20399,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw5145d3eb/products/RE_H00857/RE_H00857-1.JPG"},
+    {"id":8, "marca":"Rebook", "nombre":"Reago Essential","precio":17999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwdde6667e/products/RE_H02291/RE_H02291-1.jpg"},
+    {"id":9, "marca":"Rebook", "nombre":"Lite 3.0","precio":17999,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw2023f2a7/products/RE_H00890/RE_H00890-1.JPG"},
+    {"id":10, "marca":"Fila", "nombre":"Reacer Advantage","precio":17399,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw06d3a4ea/products/FI_F01R046-2945/FI_F01R046-2945-1.JPG"},
+    {"id":11, "marca":"Fila", "nombre":"Novaro","precio":17399,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dw8188f7ef/products/FI_F01TN013-156/FI_F01TN013-156-1.JPG"},
+    {"id":12, "marca":"Fila", "nombre":"Atmosphere","precio":14699,"cantidad":1,"img":"https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwd90ae2fd/products/FI_F01R004108-2077/FI_F01R004108-2077-1.JPG"}
 	
 ]
