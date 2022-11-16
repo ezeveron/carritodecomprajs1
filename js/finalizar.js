@@ -5,7 +5,7 @@ procesando.innerHTML = `
 														<div class="container procesando">
 															<h3>Estamos procesando su pago...</h3>
 															<h4>Por favor, espere...</h4>
-															<img class="imgr" src="../images/foot.png" alt="Procesando...">
+															
 														</div>
 													`;
 procesoFinal.appendChild(procesando);
@@ -17,7 +17,7 @@ setTimeout(() => {
 														<div class="container procesando">
 															<h3>¡Su pago ha sido aprobado!</h3>
 															<h4>En 5 segundos lo redirigiremos hacia la tienda</h4>
-															<img class="completado" src="../images/aprobado.png" alt="Redirigiendo">
+															<h5>Redirigiendo</h5>
 														</div>
 													`;
 	procesoFinal.appendChild(procesando);

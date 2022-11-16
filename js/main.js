@@ -23,7 +23,7 @@ fetch(listadoProductos)
 																<h5 class="card-title">Nombre: ${p.marca}</h5>
 																<h6 class="card-subtitle mb-2 text-muted">Marca: ${p.nombre}</h6>
 																<p class="card-text">Precio: $${p.precio}</p>
-																<button id="boton${p.id}" class="btn" style="background-color: #f48c06"> Agregar al Carrito </button>
+																<button id="boton${p.id}" class="btn" style="background-color: rgba(30, 56, 204, 0.699)"> Agregar al Carrito </button>
 															</div>		
 															
 														</div>
