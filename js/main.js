@@ -42,7 +42,7 @@ fetch(listadoProductos)
 						color: 'black',
 					},
 				}).showToast();
-				agregarAlCarro(p.id);
+				agregarAlCarrito(p.id);
 			});
 		})
 	);
@@ -87,8 +87,8 @@ botonFinalizar.addEventListener('click', () => {
 		confirmButtonText: 'Aceptar',
 		showCancelButton: true,
 		cancelButtonText: 'Cancelar',
-		cancelButtonColor: '#B7950B',
-		confirmButtonColor: '#B7950B',
+		cancelButtonColor: 'rgba(0, 132, 255, 0.801)',
+		confirmButtonColor: 'rgba(0, 132, 255, 0.801)',
 	}).then((result) => {
 		if (result.isConfirmed) {
 			let storage = JSON.parse(localStorage.getItem('carrito'));
@@ -98,7 +98,7 @@ botonFinalizar.addEventListener('click', () => {
 	});
 });
 
-const agregarAlCarro = (id) => {
+const agregarAlCarrito = (id) => {
 	const producto = Productos.find((p) => p.id === id);
 	const productoEnCarro = cart.find((p) => p.id === id);
 	if (productoEnCarro) {
@@ -107,16 +107,16 @@ const agregarAlCarro = (id) => {
 		cart.push(producto);
 	}
 	localStorage.setItem('carrito', JSON.stringify(cart));
-	actualizarCarro();
+	actualizarCarrito();
 };
 
 const contenedorCarro = document.getElementById('contenedorCarro');
 const verCarro = document.getElementById('verCarro');
 let eliminar = '';
 
-verCarro.addEventListener('click', actualizarCarro());
+verCarro.addEventListener('click', actualizarCarrito());
 
-function actualizarCarro() {
+function actualizarCarrito() {
 	localStorage.setItem('carrito', JSON.stringify(cart));
 	let aux = '';
 	cart.forEach((p) => {
@@ -161,7 +161,7 @@ vaciarCarro.addEventListener('click', () => {
 			cart.splice(0, cart.length);
 			localStorage.clear('carrito');
 			totalCompra.innerHTML = 0;
-			actualizarCarro();
+			actualizarCarrito();
 			Swal.fire({
 				title: 'Producto eliminado',
 				icon: 'success',
@@ -181,7 +181,7 @@ const eliminarDelCarro = (id) => {
 	} else {
 		cart[indice].cantidad = cart[indice].cantidad - 1;
 	}
-	actualizarCarro();
+	actualizarCarrito();
 };
 
 
